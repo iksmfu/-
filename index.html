@@ -173,18 +173,37 @@
     </div>
     <div class="description-text"></div>
     </div>
-    <ul class="social-icons">
-      <!-- Replace # with the actual links -->
-      <li><a href="https://discord.gg/ZE4aQxmnPR" target="_blank"><i class="fab fa-discord"></i></a></li>
-      <li><a href="https://t.me/@waleedthemodyt" target="_blank"><i class="fab fa-telegram"></i></a></li>
-    <li><a href="https://tiktok.com/@_thefamouschairz" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-    <li><a href="https://www.instagram.com/iksm_dc/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    </ul>
+<ul class="social-icons">
+  <!-- Replace # with the actual links -->
+  <li><a href="https://discord.gg/ZE4aQxmnPR" target="_blank"><i class="fab fa-discord"></i></a></li>
+  <li><a href="https://t.me/@waleedthemodyt" target="_blank"><i class="fab fa-telegram"></i></a></li>
+  <li><a href="https://tiktok.com/@_thefamouschairz" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+  <li><a href="https://www.instagram.com/iksm_dc/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+<!-- Add jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI/tZ1iXWZlQI1l7Uvh6/Vv0fbj+tUa6J+XkxpI0=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    // Attach click event to each social icon
+    $('.social-icons li a').click(function(event) {
+      // Prevent the default behavior (opening the link)
+      event.preventDefault();
+
+      // Get the href attribute of the clicked link
+      var link = $(this).attr('href');
+
+      // Open the link in a new tab/window
+      window.open(link, '_blank');
+    });
+  });
+</script>
   
     <div class="line"></div>
     <div class="ip-display">
       <!-- IP display logic will go here. But remember, this requires server-side scripting. -->
-      <p>https://iksm.site/</p> <span id="user-ip"></span>
+      <p>discord.gg/iksmfu/</p> <span id="user-ip"></span>
     </div>
     <div class="website-link"></div>
     </div>
